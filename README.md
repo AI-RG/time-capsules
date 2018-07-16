@@ -1,6 +1,6 @@
 # A Simple Capsule Network
 
-In [1], the concept of a "capsule" was introduced. The idea is to represent features using vectors; then, the norm of a given vector encodes the probability that its feature exists. Each such vector was dubbed a *capsule* in [1]. This extra structure permits information to be routed between capsules of successive layers in a more nuanced way than is possible between simple nodes in vanilla MLPs or CNNs. Namely, the effective weight between capsule *j* of layer *L* and capsule *i* of layer *L+1* is influenced by the dot product *v<sub>i</sub>.v<sub>j</sub>*. ([1] presents the full details of this process quite clearly, so I won't reproduce them here.)
+In [1], the concept of a "capsule" was introduced. The idea is to represent features using vectors; then, the norm of a given vector encodes the probability that its feature exists. Each such vector was dubbed a *capsule* in [1]. This extra structure permits information to be routed between capsules of successive layers in a more nuanced way than is possible between simple nodes in vanilla MLPs or CNNs. Namely, the effective weight between capsule *i* of layer *L* and capsule *j* of layer *L+1* is influenced by the dot product *v<sub>i</sub>.v<sub>j</sub>*. ([1] presents the full details of this routing process quite clearly, so I won't reproduce them here.)
 
 [1] used an architecture as in the figure to classify digits in MNIST and multi-MNIST, single images of which contain two (overlapping) digits.
 
