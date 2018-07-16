@@ -8,6 +8,8 @@ In [1], the concept of a "capsule" was introduced. The idea is to represent feat
 
 ## Experiments
 
+<img src="https://github.com/AI-RG/time-capsules/blob/master/caps/capsule-accurcy.png" alt="caps-test-acc" width="600px"/>
+
 We train on MNIST and multi-MNIST, yielding similar performance to [1], namely 99.5% test set accuracy on MNIST and 77.8% test set accuracy on multiMNIST.
 
 ## Extensions
